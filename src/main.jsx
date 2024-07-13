@@ -9,9 +9,9 @@ import store from "./store/index.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
  
- <div>
+ <>
   <Provider store={store}>
     <RouterProvider router={router}/> 
   </Provider>
- </div>
+ </>
 );

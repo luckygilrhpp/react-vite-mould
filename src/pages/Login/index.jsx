@@ -1,5 +1,6 @@
 import './index.scss'
 import{Card,Button,Input,Form} from 'antd'
+import  loginLogo from '../../assets/img/loginLogo.png'
 
 
 
@@ -11,7 +12,7 @@ const Login =()=>{
   return (
     <div className='login'>
       <Card className='login_container'>
-        <img src="" alt="" />
+        <img className="login_logo" src={loginLogo} alt="登录" />
         <Form onFinish={onFinish} validateTrigger="onBlur">
           <Form.Item
            name="mobile"
@@ -42,7 +43,7 @@ const Login =()=>{
             <Input placeholder="请输入验证码"/>
           </Form.Item>
           <Form.Item>
-            <Button type="primary" htmlType="submit">登录</Button>
+            <Button type="primary" htmlType="submit" className='login_btn'>登录</Button>
           </Form.Item>
         </Form>
       </Card>
